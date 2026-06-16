@@ -1,0 +1,63 @@
+/* Remove default margin and center the board */
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main chess board container */
+#chess-board-container {
+    background-color: beige;
+    height: 640px;
+    width: 640px;
+    margin: auto;
+
+    border: 5px solid black;
+}
+
+/* Dark squares */
+.box1{
+    background-color: #769656; /* Green */
+    color: white;
+}
+
+/* Light squares */
+.box2 {
+     background-color: #eeeed2; /* Cream */
+    color: black;
+}
+
+/* Each row contains 8 boxes */
+.row {
+    display: flex;
+}
+
+/* Common properties for both black and white squares */
+.box1, .box2 {
+
+    height: 80px;
+    width: 80px;
+
+    justify-content: center;
+    align-items: center;
+
+     /* Size of chess symbols */
+    font-size: 50px;
+
+    text-align: center;
+
+}
+
+/* White side pieces */
+.white-piece {
+    color: white;
+}
+
+/* Black side pieces */
+.black-piece {
+    color: black;
+}
